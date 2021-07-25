@@ -1,23 +1,12 @@
+
 h1 
   text-align: center
   color: orange
   text-decoration: underline
   font-weight: bolder
 
-
-body 
-  font-family: sans-serif
-  background: Aqua
-  color: cornsilk
-  text-align: center
-  font-weight: bold
-
-
-div 
-  text-align: center
-  color: blue
-
-
+body
+  color: white
 
 table 
   margin: auto
@@ -31,14 +20,53 @@ td
   width: 300px
   text-align: center
 
+.menuContainer
+  display: flex
+  flex-flow: row wrap
+
+
+
+.btn btn-light
+  justify-content: flex-start
+  order: 1
   
-section > div 
-  width: 100px
-  height: 100px
-  border: 1px solid black
-  margin: 10px
-  background-color: red
-  display: inline-block
-  text-align: center
-  line-height: 100px
-  font-size: x-large
+
+.form-control
+  
+  order: 1
+  width: 200px
+  padding-left: 0px 
+  margin-left: 0px
+  margin-right: 0px
+
+
+.btn btn-outline-success
+  
+  order: 1
+
+.row 
+    margin-bottom: 10px
+
+
+.row > div 
+    height: 50px
+    font-size: x-large
+    text-align: center
+
+
+.row > div:nth-child(1) 
+    background-color: red
+
+
+.row > div:nth-child(2) 
+    background-color: green
+
+
+.row > div:nth-child(3) 
+    background-color: blue
+
+
+.row > div:nth-child(4) 
+    background-color: yellow
+
+

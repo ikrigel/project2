@@ -6,16 +6,7 @@ h1 {
 }
 
 body {
-  font-family: sans-serif;
-  background: Aqua;
-  color: cornsilk;
-  text-align: center;
-  font-weight: bold;
-}
-
-div {
-  text-align: center;
-  color: blue;
+  color: white;
 }
 
 table {
@@ -31,15 +22,64 @@ td {
   text-align: center;
 }
 
-section > div {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-  margin: 10px;
-  background-color: red;
-  display: inline-block;
-  text-align: center;
-  line-height: 100px;
+.menuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.btn btn-light {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.form-control {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 200px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.btn btn-outline-success {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.row > div {
+  height: 50px;
   font-size: x-large;
+  text-align: center;
+}
+
+.row > div:nth-child(1) {
+  background-color: red;
+}
+
+.row > div:nth-child(2) {
+  background-color: green;
+}
+
+.row > div:nth-child(3) {
+  background-color: blue;
+}
+
+.row > div:nth-child(4) {
+  background-color: yellow;
 }
 /*# sourceMappingURL=project2-v1.css.map */
