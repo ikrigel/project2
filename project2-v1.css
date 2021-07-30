@@ -38,8 +38,8 @@ td, th {
 }
 
 .active:hover {
-  color: white;
-  background-color: white;
+  color: black;
+  background-color: blue;
   border: 0px solid #4CAF50;
 }
 
@@ -83,12 +83,6 @@ li:hover {
   background-color: white;
 }
 
-.btn {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
 .btn-primary {
   background-color: blue;
 }
@@ -104,7 +98,7 @@ li:hover {
 
 .row > div {
   height: 50px;
-  font-size: x-large;
+  font-size: small;
   text-align: center;
 }
 
@@ -120,63 +114,7 @@ li:hover {
   text-align: right;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #2196F3;
-          box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
+.card {
+  border: 1px solid black;
 }
 /*# sourceMappingURL=project2-v1.css.map */
