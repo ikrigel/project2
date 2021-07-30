@@ -12,18 +12,47 @@ window.addEventListener("load", () => {
 
       });
 
-      let header = `<h1><u>mission 2</u></h1><br/>
-    <div class="menuContainer">
-    <div class="menu">
-    <div class="row">
+//       let header = `<h1><u>Mission 2</u></h1><br/>
+//     <div class="menuContainer">
+//     <div class="menu">
+//     <div class="row">
                    
-        <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"><button type="button" class="btn btn-light home">Home</button></div>
-        <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"><button type="button" class="btn btn-light Live Reports">Live Reports</button></div>
-        <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"><button type="button" class="btn btn-light About">About</button></div>
-        <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"><div class="input-group mb-3"><input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2"><button class="btn btn-outline-secondary Search" type="button" id="button-addon2">Search</button></div>
-          </div>
+//         <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"><button type="button" class="btn btn-light home">Home</button></div>
+//         <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"><button type="button" class="btn btn-light Live Reports">Live Reports</button></div>
+//         <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"><button type="button" class="btn btn-light About">About</button></div>
+//         <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"><div class="input-group mb-3"><input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2"><button class="btn btn-outline-secondary Search" type="button" id="button-addon2">Search</button></div>
+//           </div>
+//     </div>
+//     </div>    
+// `;
+
+let header = `<h1><u>Mission 2</u></h1><br/>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Mission 2</a>
     </div>
-    </div>    
+    <ul class="nav navbar-nav">
+      <li class="active" ><a href="#" style="color: #00FFFF">Home</a></li>
+      <li><a href="#" style="color: #00FFFF">Live Report</a></li>
+      <li><a href="#" style="color: #00FFFF">About</a></li>
+    </ul>
+    <form class="navbar-form navbar-left" action="">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search" style="text-align: left">
+      </div>
+      <button type="submit" class="btn btn-default">Search</button>
+    </form>
+  </div>
+ 
+</nav>
+
+<div class="container">
+  <h3>Navbar Forms</h3>
+  
+  <div id="divContent">helloDIV</div>
+</div>
 `;
 
 // <input type="text" class="form-control" placeholder="Search" style="margin-right:0px" ></input></div>
@@ -31,118 +60,249 @@ window.addEventListener("load", () => {
       
      $(header).appendTo("body");
 
-     $(".row > div:nth-child(1) ").on('mouseover click',async function () {
-        //debugger;
-        alert(`click`);
-     });
-      
-     
-
-
-
-     });
-
-     
-
-
-  
-// $(document).ready(function() {
-   
-// });
-
-// $( function() {
-//     //debugger; 
-//  $( "#tabs" ).tabs();
-//   let currentLi=$("#tabs>ul").html();
-//    let currentTabs=$("#tabDiv").html();
-//    let lyrics =allOfMyLove();
-//     let newTabLiSection=`<li><a href="#tabs-6">I love Polo</a></li>`
-//     let newTabDIvSection=`
-//             <div id="tabs-6">
-//                 <p>
-//                 ${lyrics}
-//                 </p>
-//                 <p>
-//                 <img src="/lesson31-15.7.21/HW-Menues/PoloTheQueen.jpeg" alt="Polo" width="800" height="450" >
-//                 </p>
-//             </div> `;   
- 
-//      // $("#tabs").html("");
-//     let newTabs=  $('#tabs').html();
-      
-//     $("<li><a href='#t5'>Tab Five</a></li>").appendTo("#tabs ul");
-//     $("<div id='t5'>I was added programmatically</div>").appendTo("#tabs");
-//     $(newTabLiSection).appendTo("#tabs ul");
-//     $(newTabDIvSection).appendTo("#tabs");
-//     $("<li><a href='#t7'>Ajax Chuck Norris</a></li>").appendTo("#tabs ul");
-//     $("<div id='t7'><button id='button2'>Chuck Noris Joke</button><div id='joke'>Joke</div></div>").appendTo("#tabs");
-//     $("<li><a href='#t8'>Ajax Users list</a></li>").appendTo("#tabs ul");
-//     $("<div id='t8'><button id='buttontt8'>Ajax Users list</button><div id='usersList'>Users list</div></div>").appendTo("#tabs");
-//     $("<li><a href='#t9'>Country search</a></li>").appendTo("#tabs ul");
-//     $("<div id='t9'><button id='buttontt9'>ALL</button>&nbsp&nbsp<button id='buttontt10'>Search</button><input id='inputCountry1' type='text'><div id='countriesList'>Countries</div></div>").appendTo("#tabs");
-//     $('#tabs').tabs("refresh");
-//      newTabs=  $('#tabs').html();
-//     $( "#tabs" ).tabs({
-//         header: "> div",
-//         collapsible: true,
-//         active: false,
-//         autoHeight: false,
-//         autoActivate: true,
-//         event: "mouseover",
-//         heightStyle: "content"
-
-//     });
-  
-// } ); 
-
-$(function coinsList() {
-
-    $(".row > div:nth-child(1) ").on('mouseover click',async function () {
-       //debugger;
-       alert(`click`);
-        try {
-           let  url= "https://api.coingecko.com/api/v3/coins/list";
-           
-            const allCoins = await getDataAsync(url);
-            
-  
-  for (let i=0;i<allCoins.length;i++) {
-    // let curr = $(allCountries[i].currencies).map(function(){
-    //     return this.name;
-    //   }).get().join(", ");
-    let coinSymbol=allCoins[i].symbol;
-    if(coinSymbol.length===3){
-      contentHTML1 += `<div class="${coinSymbol} "
-      ${allCoins[i].name}
-      <td>${allCoins[i].topLevelDomain}</td>
-      <td>${allCoins[i].capital.length!==0?allCoins[i].capital:'No capital'}</td>
-      <td>${curr}</td>
-      <td><img src="${allCoins[i].flag}" width="30%" height="auto"/>
-      <td>${allCoins[i].borders.length!==0?allCoins[i].borders:'No borders'}</td>
-      </td></tr></div>`
-    }
-  }
-               $("#countriesList").html("");
-               $(`<table id='newCountry'>${contentHTML1}</table><br/>`).appendTo("#countriesList");
-               $("#ajaxResultsDiv").html(`<table id='newCountry'>${contentHTML1}</table><br/>`);
-          }
+     $(".btn-default").on('click',async function () {
+        debugger;
         
-        catch (err) {
-            alert("Error: " + err.status);
-        }
-    });
-  
-    function getDataAsync(url) {
-        return new Promise((resolve, reject) => {
-            $.ajax({
-                url: url,
-                success: data => resolve(data),
-                reject: err => reject(err)
-            });
+        let searchCoin="";
+        searchCoin =$("input").val();
+        
+        alert(`searching for ${searchCoin}`);
+        $('input.form-control').val(searchCoin);
+       
+     });
+     $(".btn-default").on('mouseenter',async function () {
+      $(this).css({"background-color": "blue", "color": "white"});
+     });
+     $(".btn-default").on('mouseleave',async function () {
+      $(this).css({"background-color": "white", "color": "green", "border":"2px solid #4CAF50"});
+     });
+    
+     $(".active:contains('Home')").on('click',async function () {
+      //debugger;
+      
+      // let searchCoin="";
+      // searchCoin =$("input").val();
+      // $("input").value=searchCoin;
+      //alert(`searching for Home`); 
+      //coinsList();  
+
         });
-    }
-  
+        $(".active").on('mouseover',async function () {
+          $(this).css({"background-color": "white", "color": "white", "border":"2px solid #4CAF50"});
+          
+            });
+            $(".active").on('mouseleave',async function () {
+              $(this).css({"background-color": "white", "color": "green", "border":"0px solid #4CAF50"});
+              
+             });
+      
+        $(".active:contains('Live Report')").on('click',async function () {
+         
+          alert(`searching for Live Report`);     
+            });
+            $(".active:contains('Live Report')").on('mouseenter',async function () {
+              $(this).css({"background-color": "blue", "color": "white"});
+              alert(`searching for Live Report`); 
+                });
+                $(".active:contains('Live Report')").on('mouseleave',async function () {
+                  $(this).css({"background-color": "white", "color": "green", "border":"2px solid #4CAF50"});
+                  alert(`searching for Live Report`); 
+                 });
+
+        $("a:contains('About')").on('click',async function () {
+              //debugger;
+              
+              // let searchCoin="";
+              // searchCoin =$("input").val();
+              // $("input").value=searchCoin;
+              alert(`searching for About`);     
+             });
+
+         $("a:contains('Live Report')").on('click',async function () {
+              //debugger;
+              
+              // let searchCoin="";
+              // searchCoin =$("input").val();
+              // $("input").value=searchCoin;
+              alert(`searching for Live Report`);     
+            });
+          
+          $(".navbar-brand:contains('Mission 2')").on('click',async function () {
+              //debugger;
+              
+              // let searchCoin="";
+              // searchCoin =$("input").val();
+              // $("input").value=searchCoin;
+              alert(`searching for Mission 2`);     
+           });
+          
+          
+
+           $(function coinsList() {
+
+            $(".active:contains('Home')").on('mouseover click',async function () {
+              // debugger;
+               //alert(`click`);
+                try {
+                   let  url= "https://api.coingecko.com/api/v3/coins/";
+                   
+                    const allCoins = await getDataAsync(url);
+        
+                    let contentHTML1 =`
+              <tr>
+                  <th>select</th>
+                  <th>id</th>
+                  <th>symbol</th>
+                  <th>more info</th>
+                  <th>coin picture</th>
+                  <th>coin prices</th>
+                  
+        
+              </tr>
+          `;
+          let id=1;
+          let toggleSwitch=`
+                 <label class='switch'>
+                    <input type="checkbox">
+                   <span class="slider round"></span>
+                 </label>
+          `
+           let moreInfoButton=""//`<button type="button" class="btn btn-primary" id="btc">More Info</button>`     
+          
+          for (let i=0;i<allCoins.length;i++) {
+            // let curr = $(allCountries[i].currencies).map(function(){
+            //     return this.name;
+            //   }).get().join(", ");
+            let coinSymbol=allCoins[i].symbol;
+            let coinId=allCoins[i].id;
+            moreInfoButton=`<button id="${coinSymbol}" type="button" class="btn btn-primary" onCLick="coinsListMoreInfo(getElementById('${coinSymbol}'))">More Info</button>`
+              contentHTML1 += `<div class="${coinId} "
+              <tr>
+              <td>${toggleSwitch}</td>
+              <td>${allCoins[i].id}</td>
+              <td>${allCoins[i].symbol}</td>
+              <td>${moreInfoButton}</td>
+              <td>${allCoins[i].id}</td>
+              <td>${allCoins[i].id}</td>
+              </tr></div>`
+            
+          }
+                       $("#divContent").html("");
+                       //$(`<table id='newCountry'>${contentHTML1}</table><br/>`).appendTo("#countriesList");
+                       $("#divContent").html(`<table id='coinsList'>${contentHTML1}</table><br/>`);
+                  }
+                
+                catch (err) {
+                    alert("Error: " + err.status);
+                }
+            });
+          
+            function getDataAsync(url) {
+                return new Promise((resolve, reject) => {
+                    $.ajax({
+                        url: url,
+                        success: data => resolve(data),
+                        reject: err => reject(err)
+                    });
+                });
+            }
+          
+          });
+          function coinsListMoreInfo(obj){
+            alert(`more info`);
+          }
+          $(".active:contains('More')").on('mouseover click',async function () {
+alert(`More Info`);
+          });
+
+          $(function coinsListMoreInfo(obj) {
+              let coinId=obj.id;
+              alert(`more info`);
+            $(".btn:contains('More Info')").on('mouseover click',async function () {
+              alert(`more info`);
+              // debugger;
+               //alert(`click`);
+               let coinID=this.id;
+                try {
+                   let  url= `https://api.coingecko.com/api/v3/coins/${coinID}`;
+                   
+                    const allCoins = await getDataAsync(url);
+        
+                   ;
+          let moreInfoButton="";
+          let imageThumb = "";
+          for (let i=0;i<allCoins.length;i++) {
+            if(allCoins[i].id===coinID){imageThumb=allCoins[i].thumb;}
+            // let curr = $(allCountries[i].currencies).map(function(){
+            //     return this.name;
+            //   }).get().join(", ");
+            let coinSymbol=allCoins[i].symbol;
+            let coinId=allCoins[i].id;
+            moreInfoButton=`<button id="${coinSymbol} type="button" class="btn btn-primary" ">More Info</button>`
+              contentHTML1 += `<div class="${coinSymbol} "
+              <tr>
+              <td>${toggleSwitch}</td>
+              <td>${allCoins[i].id}</td>
+              <td>${allCoins[i].symbol}</td>
+              <td>${moreInfoButton}</td>
+              <td><img src="${imageThumb}" width="30%" height="auto"/></td>
+              <td>${allCoins[i].id}</td>
+              </tr></div>`
+            
+          }
+                       $("#divContent").html("");
+                       //$(`<table id='newCountry'>${contentHTML1}</table><br/>`).appendTo("#countriesList");
+                       $("#divContent").html(`<table id='coinsList'>${contentHTML1}</table><br/>`);
+                  }
+                
+                catch (err) {
+                    alert("Error: " + err.status);
+                }
+            });
+          
+            function getDataAsync(url) {
+                return new Promise((resolve, reject) => {
+                    $.ajax({
+                        url: url,
+                        success: data => resolve(data),
+                        reject: err => reject(err)
+                    });
+                });
+            }
+          
+          });
+
+
+
+     });
+
+     
+
+const creatCoinCard=function(singleCoin){
+  const $card=$(`<div class="col"
+  <div class="card" style="width: 19rem;">
+    <div class="card-body">
+      <h5 class="card=title">${singleCoin.symbol}</h5>
+        <div class ="form-check form-switch"> 
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+         </div>
+         <p class="card-text">${singleCoin.name}</p>
+         <a class="moreInfo btn btn-primary">More Info</a>
+    </div>
+  </div>
+</div>`);
+  $card.find("input[type=checkbox]").on("click",countChecked);
+
+  $card.find('a.moreInfo').on("click",function(){
+    console.log(singleCoin.id);
+    moreCoinInfo(singleCoin.id);
   });
+  $('ul').append($card);
+
+}
+  
+
+
 
 //   $(function allCountriesFilter() {
 

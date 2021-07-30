@@ -1,0 +1,24 @@
+0:
+block_time_in_minutes: "10.0"
+id: "bitcoin"
+image: {thumb: "https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579", small: "https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1547033579", large: "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"}
+last_updated: "2021-07-27T12:52:35.804Z"
+localization: {en: "Bitcoin", de: "Bitcoin", es: "Bitcoin", fr: "Bitcoin", it: "Bitcoin", …}
+market_data: {current_price: {…}, roi: null, market_cap: {…}, market_cap_rank: 1, total_volume: {…}, …}
+name: "Bitcoin"
+symbol: "btc"
+__proto__: Object
+1: {id: "ethereum", symbol: "eth", name: "Ethereum", block_time_in_minutes: "0.2", image: {…}, …}
+2: {id: "tether", symbol: "usdt", name: "Tether", block_time_in_minutes: null, image: {…}, …}
+3: {id: "binancecoin", symbol: "bnb", name: "Binance Coin", block_time_in_minutes: null, image: {…}, …}
+4: {id: "cardano", symbol: "ada", name: "Cardano", block_time_in_minutes: null, image: {…}, …}
+5: {id: "ripple", symbol: "xrp", name: "XRP", block_time_in_minutes: null, image: {…}, …}
+6: {id: "usd-coin", symbol: "usdc", name: "USD Coin", block_time_in_minutes: null, image: {…}, …}
+7: {id: "dogecoin", symbol: "doge", name: "Dogecoin", block_time_in_minutes: "1.0", image: {…}, …}
+8: {id: "polkadot", symbol: "dot", name: "Polkadot", block_time_in_minutes: null, image: {…}, …}
+9: {id: "binance-usd", symbol: "busd", name: "Binance USD", block_time_in_minutes: null, image: {…}, …}
+10: {id: "uniswap", symbol: "uni", name: "Uniswap", block_time_in_minutes: null, image: {…}, …}
+11: {id: "bitcoin-cash", symbol: "bch", name: "Bitcoin Cash", block_time_in_minutes: null, image: {…}, …}
+12: {id: "litecoin", symbol: "ltc", name: "Litecoin", block_time_in_minutes: "2.5", image: {…}, …}
+13: {id: "chainlink", symbol: "link", name: "Chainlink", block_time_in_minutes: null, image: {…}, …}
+14: {id: "solana", symbol: "sol", name: "Solana", block_time_in_minutes: null, image: {…}, …}
